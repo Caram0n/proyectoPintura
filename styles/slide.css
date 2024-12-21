@@ -1,0 +1,42 @@
+  /* Contenedor del slider con 80% de la anchura */
+  .slide {
+    width: 1264px;
+    height: 468px;  /* Opcional, puedes limitar el ancho máximo */
+    margin: 0 auto;  /* Centra el slider en la página */
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  /* Carrusel de imágenes */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Cada imagen */
+  .slides img {
+    width: 100%;
+    display: block;
+  }
+
+  /* Botones de navegación */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }

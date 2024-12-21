@@ -1,0 +1,141 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header general */
+.header {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Top section */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+}
+
+.header-top .social-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Main section */
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 40%;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.search-icon {
+    height: 20px;
+    width: 20px;
+    fill: #000;
+    transition: fill 0.3s;
+}
+
+.search-icon:hover {
+    fill: #007bff;
+}
+
+/* Navigation menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+.button-container {
+    align-items: center;
+    margin: 0 auto;
+    width: 1264px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 30px;
+  }
+
+  .button-item {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .button-item img {
+    width: 150px;
+    height: 150px;
+    display: cover;
+  }
+
+  @media (max-width: 1024px) {
+    .button-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .button-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .button-container {
+      grid-template-columns: 1fr; /* 1 columna en pantallas extra pequeñas */
+    }
+  }
